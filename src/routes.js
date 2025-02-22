@@ -1,74 +1,126 @@
 import React from 'react';
-
 import { Icon } from '@chakra-ui/react';
 import {
-  MdBarChart,
-  MdPerson,
-  MdHome,
-  MdLock,
-  MdOutlineShoppingCart,
+  MdDashboard,
+  MdInventory2,
+  MdEvent,
+  MdPeople,
+  MdSmartToy,
+  MdDesignServices,
+  MdSchool,
+  MdTrendingUp,
+  MdInsights,
+  MdNotifications,
+  MdRateReview,
+  MdEventNote,
 } from 'react-icons/md';
 
-// Admin Imports
-import MainDashboard from 'views/admin/default';
-import NFTMarketplace from 'views/admin/marketplace';
-import Profile from 'views/admin/profile';
-import DataTables from 'views/admin/dataTables';
-import RTL from 'views/admin/rtl';
-
-// Auth Imports
-import SignInCentered from 'views/auth/signIn';
+// View Imports
+import Dashboard from 'views/admin/dashboard';
+import InventoryPricing from 'views/admin/inventory-pricing';
+import BookingsEvents from 'views/admin/bookings-events';
+import EventPlanner from 'views/admin/event-planner';
+import CommunityForum from 'views/admin/community-forum';
+import AICaptionGenerator from 'views/admin/ai-caption-generator';
+import ContextualInsights from 'views/admin/contextual-insights';
+import DesignGallery from 'views/admin/design-gallery';
+import Tutorials from 'views/admin/tutorials';
+import BalloonArtTrends from 'views/admin/balloon-art-trends';
+import AnalyticsInsights from 'views/admin/analytics-insights';
+import NotificationCenter from 'views/admin/notification-center';
+import ReviewSystem from 'views/admin/review-system';
 
 const routes = [
   {
-    name: 'Main Dashboard',
+    name: 'Dashboard',
     layout: '/admin',
-    path: '/default',
-    icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
-    component: <MainDashboard />,
+    path: '/dashboard',
+    icon: <Icon as={MdDashboard} width="20px" height="20px" color="inherit" />,
+    component: <Dashboard />,
   },
   {
-    name: 'NFT Marketplace',
+    name: 'Inventory & Pricing',
     layout: '/admin',
-    path: '/nft-marketplace',
-    icon: (
-      <Icon
-        as={MdOutlineShoppingCart}
-        width="20px"
-        height="20px"
-        color="inherit"
-      />
-    ),
-    component: <NFTMarketplace />,
-    secondary: true,
+    path: '/inventory-pricing',
+    icon: <Icon as={MdInventory2} width="20px" height="20px" color="inherit" />,
+    component: <InventoryPricing />,
   },
   {
-    name: 'Data Tables',
+    name: 'Bookings & Events',
     layout: '/admin',
-    icon: <Icon as={MdBarChart} width="20px" height="20px" color="inherit" />,
-    path: '/data-tables',
-    component: <DataTables />,
+    path: '/bookings-events',
+    icon: <Icon as={MdEvent} width="20px" height="20px" color="inherit" />,
+    component: <BookingsEvents />,
   },
   {
-    name: 'Profile',
+    name: 'Event Planner',
     layout: '/admin',
-    path: '/profile',
-    icon: <Icon as={MdPerson} width="20px" height="20px" color="inherit" />,
-    component: <Profile />,
+    path: '/event-planner',
+    icon: <Icon as={MdEventNote} width="20px" height="20px" color="inherit" />,
+    component: <EventPlanner />,
   },
   {
-    name: 'Sign In',
-    layout: '/auth',
-    path: '/sign-in',
-    icon: <Icon as={MdLock} width="20px" height="20px" color="inherit" />,
-    component: <SignInCentered />,
+    name: 'Community Forum',
+    layout: '/admin',
+    path: '/community-forum',
+    icon: <Icon as={MdPeople} width="20px" height="20px" color="inherit" />,
+    component: <CommunityForum />,
   },
   {
-    name: 'RTL Admin',
-    layout: '/rtl',
-    path: '/rtl-default',
-    icon: <Icon as={MdHome} width="20px" height="20px" color="inherit" />,
-    component: <RTL />,
+    name: 'AI Caption Generator',
+    layout: '/admin',
+    path: '/ai-caption-generator',
+    icon: <Icon as={MdSmartToy} width="20px" height="20px" color="inherit" />,
+    component: <AICaptionGenerator />,
+  },
+  {
+    name: 'Contextual Insights',
+    layout: '/admin',
+    path: '/contextual-insights',
+    icon: <Icon as={MdInsights} width="20px" height="20px" color="inherit" />,
+    component: <ContextualInsights />,
+  },
+  {
+    name: 'Design Gallery',
+    layout: '/admin',
+    path: '/design-gallery',
+    icon: <Icon as={MdDesignServices} width="20px" height="20px" color="inherit" />,
+    component: <DesignGallery />,
+  },
+  {
+    name: 'Tutorials',
+    layout: '/admin',
+    path: '/tutorials',
+    icon: <Icon as={MdSchool} width="20px" height="20px" color="inherit" />,
+    component: <Tutorials />,
+  },
+  {
+    name: 'Balloon Art Trends',
+    layout: '/admin',
+    path: '/balloon-art-trends',
+    icon: <Icon as={MdTrendingUp} width="20px" height="20px" color="inherit" />,
+    component: <BalloonArtTrends />,
+  },
+  {
+    name: 'Analytics Insights',
+    layout: '/admin',
+    path: '/analytics-insights',
+    icon: <Icon as={MdInsights} width="20px" height="20px" color="inherit" />,
+    component: <AnalyticsInsights />,
+  },
+  {
+    name: 'Notification Center',
+    layout: '/admin',
+    path: '/notification-center',
+    icon: <Icon as={MdNotifications} width="20px" height="20px" color="inherit" />,
+    component: <NotificationCenter />,
+  },
+  {
+    name: 'Review System',
+    layout: '/admin',
+    path: '/review-system',
+    icon: <Icon as={MdRateReview} width="20px" height="20px" color="inherit" />,
+    component: <ReviewSystem />,
   },
 ];
 
