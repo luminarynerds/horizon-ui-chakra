@@ -1,6 +1,10 @@
 import React from 'react';
 import { Box, Text } from '@chakra-ui/react';
 
+export const Customers = () => <div>Customers Content</div>;
+export const Contacts = () => <div>Contacts Content</div>;
+export const Deals = () => <div>Deals Content</div>;
+
 const CRM = () => {
   return (
     <Box p={4}>

@@ -10,4 +10,12 @@ const Marketing = () => {
   );
 };
 
+export const Campaigns = () => {
+  return <Text>Campaigns Component</Text>;
+};
+
+export const MarketingAnalytics = () => {
+  return <Text>Marketing Analytics Component</Text>;
+};
+
 export default Marketing;
